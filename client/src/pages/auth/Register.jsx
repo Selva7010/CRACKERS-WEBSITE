@@ -1,5 +1,6 @@
 // import { Link, useNavigate } from "react-router-dom";
 // import axios from "axios";
+import { Link } from "react-router-dom";
 
 // export default function Register() {
 //   const navigate = useNavigate();
@@ -159,11 +160,9 @@ export default function Register(){
 
         {/* Login link */}
         <p className="text-center mt-6 text-sm text-red-500">
-          Already have an account?{" "}
-          <a href="/login" className="text-black cursor-pointer font-semibold hover:underline">
-            Login Here
-          </a>
-        </p>
+        Don't have an account?{" "}
+        <Link to="/register" className="text-red-500 text-xl font-semibold  hover:underline">Sign up</Link>
+      </p>
       </div>
     </div>
   );
