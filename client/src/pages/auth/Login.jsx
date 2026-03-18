@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Api from "../../Api";
+import { Link } from "react-router-dom";
 
 export default function Login() {
   const navigate = useNavigate();
@@ -89,14 +90,9 @@ export default function Login() {
       </form>
 
       {/* Sign up Link */}
-      <p className="text-center mt-6 text-sm text-red-500">
+       <p className="text-center mt-6 text-sm text-red-500">
         Don't have an account?{" "}
-        <a
-          href="/register"
-          className="text-red-500 text-xl font-semibold  hover:underline"
-        >
-        Sign up
-        </a>
+        <Link to="/register" className="text-red-500 text-xl font-semibold  hover:underline">Sign up</Link>
       </p>
     
      </div>
